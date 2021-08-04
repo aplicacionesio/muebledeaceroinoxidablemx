@@ -1,0 +1,151 @@
+#toggle-menu {
+	display: none;
+	background: #ccc;
+	text-align: right;
+	padding: 1em;
+
+	@include hasta(web) {
+		display: block;
+	}
+
+	& img {
+		width: 5%;
+	}
+}
+
+.menu-principal {
+	display: none;
+	font-family: $fuenteelegante;
+	overflow: hidden;
+	margin: 0 0 15px 0;
+
+	& ul {
+		padding: 0px;
+		text-align: center;
+		margin: 0px;
+
+		& li {
+			display: block!important;
+
+			& a {
+				display: block;
+				padding: 0.7em 0.5em;
+				text-decoration: none;
+				font-size: 1.5em;
+				border-bottom: #333 1px solid;
+				color: #fff;
+
+				&:hover {
+					color: #666;
+				}
+			}
+
+			& ul {
+				display: none;
+				background: #DDD;
+
+				& li {
+					display: block!important;
+
+					& a {
+						font-size: 1.5em;
+						border-bottom: #FFF 1px solid;
+					}
+				}
+			}
+		}
+
+		& li:last-child a {
+			border-bottom: 0px;
+		}
+	}
+}
+
+
+
+
+.menu-principal2 {
+	display: none;
+	font-family: $fuenteelegante;
+	background: $azulfuerte;
+	background-size: contain;
+	margin: 15px auto 30 auto;
+	font-size: 0.7em;
+	height: 40px;
+
+	& ul {
+		padding: 0px;
+		margin: 0px;
+		text-align: center;
+
+		& .separador {
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+
+		& li {
+			display: inline-block;
+			margin: 0px;
+
+			& a {
+				height: 40px;
+				padding: 8px 25px;
+				text-decoration: none;
+				font-size: 1.5em;
+				display: block;
+				color: #FFF;
+				
+
+				&:hover {
+					color: $azulclaro;
+					padding: 6px 24px;
+					background: #fff;
+					border: #fff 1px solid;
+					border-left: $azulfuerte 1px solid;
+					border-right: $azulfuerte 1px solid;
+				}
+			}
+
+			& ul {
+				display: none;
+				position: absolute;
+				background: $azulclaro;
+				width: 20em;
+				z-index: 10;
+				padding: 1em;
+				border: #fff 1px solid;
+				-webkit-box-shadow: 0 0 15px 0 #AAA;
+				box-shadow: 0 0 15px 0 #AAA;
+
+
+				& li {
+					padding: 0px;
+					margin: 0px;
+					display: block;
+
+					& a {
+						display: block;
+						font-size: 1.3em;
+						border: 0px;
+						border-bottom: #FFF 1px solid;
+
+						&:hover {
+							display: block;
+							font-size: 1.3em;
+							border: 0px;
+							border-bottom: #FFF 1px solid!important;
+						}
+					}
+				}
+			}
+		}
+
+		& li:last-child a {
+			border-bottom: 0px;
+		}
+	}
+
+	@include desde(web) {
+		display: block;
+	}
+}

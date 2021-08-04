@@ -1,0 +1,35 @@
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" routerLink="inicio">
+        <img alt="Muebles de Acero Inoxidable" src="assets/img/logo2.png">
+      </a>
+
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+
+        <li><a routerLink="inicio" (click)="onMenuClick()">Inicio</a></li>
+        <li><a routerLink="nosotros" (click)="onMenuClick()">Quiénes Sómos</a></li>
+        <li><a routerLink="productos" (click)="onMenuClick()">Productos</a></li>
+        <li><a routerLink="servicio" (click)="onMenuClick()">Servicio de Mantenimiento</a></li>
+        <li><a routerLink="contacto" (click)="onMenuClick()">Contacto</a></li>
+
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://www.facebook.com/ferinoxidable" target="_blank"><i class="icon icon-facebook-square"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCLw2MGL2u_8MP-Ok6Hu11EQ" target="_blank"><i class="icon icon-youtube-square"></i></a></li>
+      </ul>
+
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>

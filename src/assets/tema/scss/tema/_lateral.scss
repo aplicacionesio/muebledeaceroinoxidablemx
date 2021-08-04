@@ -1,0 +1,35 @@
+.lateral {
+
+	border-left: #CCC 2px solid!important;
+
+
+	&__suscribete {
+		overflow: hidden;
+
+		& h3 {
+			font-family: $fuenteelegante;
+			color: #FFF;
+			font-weight: normal;
+			text-align: center;
+			margin: 3px!important;
+		}
+
+		& input {
+			display: block!important;
+			margin-bottom: 0.3em;
+			padding: 0.3em;
+			width: 100%;
+			background: #fff;
+			color: #000;
+			border: #fff 1px solid;
+		}
+
+		& .enviar {
+			background: #333;
+			color: #fff;
+		}
+	}
+	
+	
+}
+

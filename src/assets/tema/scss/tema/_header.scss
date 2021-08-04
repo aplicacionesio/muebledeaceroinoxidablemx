@@ -1,0 +1,115 @@
+.encabezado {
+	display: block;
+	overflow: hidden;
+	padding: 0px 0px 0px 0px!important;
+
+	&__logo {
+		text-align: center;
+
+		& img {
+			margin-bottom: 30px;
+
+			@include desde(web) {
+				text-align: left;
+				display: block;
+			}
+		}
+
+		@include desde(tablet) {
+			
+			& img {
+				margin: 20px 30px 30px 10px;
+			}
+		}
+
+		@include desde(web) {
+			
+			& img {
+				margin: 20px 30px 0px 30px;
+			}
+		}
+	}
+
+	&__titulo1 {
+		display: block;
+		margin: 15px 0px!important;
+		font-family: $fuenteelegante;
+		text-align: center;
+
+		@include desde(movil) {
+			font-size: 1em;
+			font-weight: normal;
+			text-align: center;
+		}
+
+		@include desde(tablet) {
+			font-size: 1em;
+			font-weight: normal;
+			text-align: right;
+		}
+
+		@include desde(web) {
+			font-size: 1em;
+			font-weight: normal;
+			text-align: right;
+		}
+	}
+
+
+
+	@include desde(web) {
+		padding: 0px;
+	}
+}
+
+.imagenes-encabezado img {
+	border-radius: 50%;
+	border: $azulclaro 3px solid;
+}
+
+
+.tshare {
+	margin: 0.3em 0em;
+	display: block;
+	color: #F00;
+	text-decoration: none;
+	
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.cshare {
+	margin: 0.3em 0em;
+	display: block;
+	color: #F00;
+	text-decoration: none;
+	
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.wshare {
+	margin: 0.3em 0em;
+	display: block;
+	color: #1B8F33;
+	text-decoration: none;
+	
+	&:hover {
+		text-decoration: none;
+		opacity: 0.7;
+	}
+}
+
+.fshare {
+	margin: 0.3em 0em;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	
+	&:hover {
+		text-decoration: none;
+		opacity: 0.7;
+	}
+}

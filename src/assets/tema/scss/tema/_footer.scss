@@ -1,0 +1,83 @@
+footer {
+	margin: 30px 0px 0px 0px!important;
+	background: $azulclaro;
+	color: #fff;
+	display: block;
+	border-top: $azulfuerte 7px solid;
+	padding-bottom: 40px;
+}
+
+.pie {
+
+	&__sitiosrelacionados {
+
+		& div {
+			float: left!important;
+		}
+
+		& h2 {
+			padding-left: 1em;
+		}
+
+		& img {
+			border: #CCC 3px solid;
+			margin-bottom: 15px;
+		}
+	}
+
+	&__logo {
+		
+		margin: 60px auto 0px auto;
+		background: url(../../images/linea-doble.jpg) top left repeat-x;
+
+		& a {
+			display: block;
+			text-align: center;
+			padding: 15px 0px;
+
+			& img {
+				width: 40%;	
+				background: #fff;
+				padding: 0px 15px;
+		
+				@include desde(tablet) {
+					width: 20%;
+				}
+			}
+		}
+	}
+
+
+	&__direccion {
+		text-align: center;
+		font-family: $fuentesans;
+		font-size: 1em;
+		margin: 30px auto!important;
+	}
+}
+
+
+.owl-controls {
+	display: block;
+	width: 100%;
+	text-align: center;
+	
+	& .owl-nav {
+		display: block;
+		text-align: center;
+		width: 100%;
+
+		& .owl-prev, & .owl-next {
+			font-size: 10px;
+			display: block;
+			padding: 5px 7px;
+			background: #DEDEDE;
+			border: #666 1px solid;
+			margin: 5px;
+		}
+	}	
+}
+
+.imagen_pie {
+	width: 100%;
+}
